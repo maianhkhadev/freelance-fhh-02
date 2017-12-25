@@ -62,7 +62,7 @@ nav {
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     .nav {
       margin-left: -5.5rem;
 
@@ -77,7 +77,7 @@ nav {
   }
 }
 
-.topnav .mobile {
+.nav .mobile {
   display: none;
 
   .actions {
@@ -95,16 +95,16 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .topnav {
+@media screen and (max-width: 1200px) {
+  .nav {
     flex-direction: column;
   }
-  .topnav li:not(:first-child) { display: none; }
-  .topnav li.mobile {
+  .nav li:not(:first-child) { display: none; }
+  .nav li.mobile {
     text-align: right;
     display: block;
   }
-  .topnav.responsive li {
+  .nav.responsive li {
     display: block;
   }
 }
