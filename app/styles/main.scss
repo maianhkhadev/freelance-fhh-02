@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900');
 
 @import "./header";
+@import "./breadcrum";
 @import "./footer";
 
 html {
@@ -25,12 +26,12 @@ body {
   }
 }
 
-button {
-  cursor: pointer;
-}
-
 .space-on-mobile {
   height: 1.25rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 .btn-black {
@@ -45,4 +46,72 @@ button {
 }
 .btn-black.focus, .btn-black:focus {
   box-shadow: 0 0 0 .2rem rgba(#333538, 0.5);
+}
+
+
+// #stickySocial ul.socials > li > a:hover > .fa-facebook,
+// #stickySocial ul.socials > li > a > .fa-facebook + span {
+//   background-color: #333538;
+// }
+//
+// #stickySocial ul.socials > li > a:hover > .fa-facebook,
+// #stickySocial ul.socials > li > a > .fa-facebook + span:before {
+//   border-color: #333538;
+// }
+//
+// #stickySocial ul.socials > li > a:hover > .fa-linkedin,
+// #stickySocial ul.socials > li > a > .fa-linkedin + span {
+//   background-color: #0077b5;
+// }
+//
+// #stickySocial ul.socials > li > a:hover > .fa-linkedin,
+// #stickySocial ul.socials > li > a > .fa-linkedin + span:before {
+//   border-color: #0077b5;
+// }
+
+#stickySocial {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 0;
+  line-height: 0;
+  z-index: 999;
+}
+
+#stickySocial .socials {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  display: table;
+}
+
+#stickySocial .socials > li {
+  list-style-type: none;
+}
+
+#stickySocial .socials > li > a {
+  position: relative;
+  padding: 0;
+  z-index: 0;
+}
+
+#stickySocial .socials > li > a > i {
+  display: block;
+  width: 42px;
+  color: #e7cf07;
+  background-color: #333538;
+  border: 1px solid #333538;
+  line-height: 42px;
+  text-align: center;
+  transition: color .25s, border-color .25s, background-color .25s ease-in-out;
+}
+
+#stickySocial .socials > li > a:hover > i {
+  color: #e7cf07;
+  background-color: #333538;
+}
+
+#stickySocial .socials > li + li > a > i {
+  border-top-width: 0;
 }

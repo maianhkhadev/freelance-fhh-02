@@ -41,10 +41,7 @@ $(document).ready(function () {
     arrows: false
   })
 
-  AOS.init({
-    delay: 500,
-    duration: 500
-  })
+  new WOW().init()
 })
 
 function myFunction() {

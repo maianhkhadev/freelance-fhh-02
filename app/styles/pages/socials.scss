@@ -1,0 +1,24 @@
+.section-socials {
+
+  .content {
+    padding-top: 13.75rem;
+    padding-bottom: 4.75rem;
+
+    p {
+      color: #363636;
+      font-size: 1.125rem;
+    }
+  }
+
+  .socials {
+
+    a {
+      margin-left: 0.675rem;
+      margin-right: 0.675rem;
+
+      &:hover {
+        text-decoration: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.breadcrum {
+  background-color: #333538;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+
+  .title {
+    color: #ffe50d;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.875rem;
+  }
+  .links {
+    color: #c2c2c2;
+
+    a {
+      color: #c2c2c2;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
