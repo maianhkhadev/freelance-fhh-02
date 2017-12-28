@@ -11,6 +11,8 @@
   }
 }
 .section-reasons {
+  background-color: #fcf3d3;
+  padding-top: 5.625rem;
   padding-bottom: 9.125rem;
 
   .reason {
@@ -53,7 +55,7 @@
       }
     }
     &.odd {
-      background-color: #c23e25;
+      background-color: #282828;
 
       .title {
         color: #d7d7d7;
@@ -70,7 +72,7 @@
         height: 0px;
         border-top: 1rem solid transparent;
         border-bottom: 1rem solid transparent;
-        border-left: 1rem solid #c23e25;
+        border-left: 1rem solid #282828;
         z-index: 999;
       }
       @media only screen and (max-width: 1200px) {
@@ -83,7 +85,7 @@
           border-top: unset;
           border-left: 1rem solid transparent;
           border-right: 1rem solid transparent;
-          border-bottom: 1rem solid #c23e25;
+          border-bottom: 1rem solid #282828;
         }
       }
     }
@@ -96,106 +98,5 @@
     .content {
 
     }
-  }
-}
-
-.section-testimonials {
-  background-color: #fcf3d3;
-  padding-top: 4.25rem;
-  padding-bottom: 4.25rem;
-
-  .section-title {
-    color: #c23e25;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 2.75rem;
-  }
-
-  .slick-dotted.slick-slider {
-    margin-bottom: 5rem;
-  }
-  .slick-dots {
-    bottom: -4.75rem;
-
-    li {
-      width: 1.75rem;
-
-      &.slick-active {
-
-        button {
-          background-color: #363636;
-        }
-      }
-
-      button {
-        width: 1.75rem;
-        height: 0.25rem;
-        background-color: #999484;
-        padding: 0;
-
-        &::before {
-          content: unset;
-        }
-      }
-    }
-  }
-
-  .testimonial {
-    position: relative;
-    text-align: center;
-    outline: unset;
-
-    .start {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-    .end {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-    }
-
-    .name {
-      color: #3c3d41;
-      font-size: 1.125rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    .position {
-      color: #656b6f;
-      margin-bottom: 1.5rem;
-    }
-    .content {
-      color: #565656;
-      font-size: 1.5rem;
-      font-weight: 300;
-      margin-bottom: 1.5rem;
-    }
-    .stars {
-      color: #ffae00;
-    }
-  }
-}
-
-.section-brands {
-  padding-top: 10rem;
-
-  .section-title {
-    color: #c23e25;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 2.75rem;
-  }
-
-  .content {
-    font-size: 1.125rem;
-    margin-bottom: 2.75rem;
   }
 }
