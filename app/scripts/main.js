@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 $(document).ready(function () {
   $('.section-news .slick').slick({
     dots: true,
@@ -40,6 +38,23 @@ $(document).ready(function () {
     dots: true,
     arrows: false
   })
+
+  $('.section-data').viewportChecker({
+      offset: 0,
+      callbackFunction: function (elem, action) {
+        $('.section-data .number').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now))
+            }
+          })
+        })
+      }
+    })
 
   new WOW().init()
 })
