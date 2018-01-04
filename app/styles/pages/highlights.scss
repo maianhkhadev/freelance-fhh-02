@@ -17,12 +17,15 @@
 
   .highlight {
     position: relative;
+    background-color: #d7d7d7;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
     .header {
+      cursor: pointer;
 
       .title {
+        color: #c23e25;
         font-size: 1.5rem;
         text-align: center;
         text-transform: uppercase;
@@ -32,12 +35,14 @@
     .box {
 
       .title {
+        color: #c23e25;
         font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 1.25rem;
       }
       .content {
+        color: #c23e25;
         font-size: 1.125rem;
         margin-bottom: 2rem;
       }
@@ -67,7 +72,7 @@
       }
     }
 
-    &.even {
+    &:hover, &.active {
       background-color: #c23e25;
 
       .title {
@@ -75,16 +80,6 @@
       }
       .content {
         color: #ffffff;
-      }
-    }
-    &.odd {
-      background-color: #d7d7d7;
-
-      .title {
-        color: #c23e25;
-      }
-      .content {
-        color: #c23e25;
       }
     }
   }
