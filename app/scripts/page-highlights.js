@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $('.highlight .header').on('click', function () {
     let self = this
+    $('.highlight .box').slideUp('fast')
     $(self).next().slideDown('fast')
     $(self).slideUp('fast')
   })
